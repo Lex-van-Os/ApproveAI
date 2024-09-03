@@ -1,0 +1,6 @@
+@ApproveAiApi_HostAddress = http://localhost:5042
+
+GET {{ApproveAiApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
