@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApproveAiModels", "ApproveAiModels\ApproveAiModels.csproj", "{CBAFA3E5-BDE0-422B-B65A-087D894C5C6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApproveAiBusiness", "ApproveAiBusiness\ApproveAiBusiness.csproj", "{B6F454E3-318F-43A3-AE99-FCBE2E93ED5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CBAFA3E5-BDE0-422B-B65A-087D894C5C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBAFA3E5-BDE0-422B-B65A-087D894C5C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBAFA3E5-BDE0-422B-B65A-087D894C5C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F454E3-318F-43A3-AE99-FCBE2E93ED5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F454E3-318F-43A3-AE99-FCBE2E93ED5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F454E3-318F-43A3-AE99-FCBE2E93ED5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F454E3-318F-43A3-AE99-FCBE2E93ED5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
