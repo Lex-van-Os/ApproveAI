@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7005C7C2-B699-4D2E-85C9-2EDAD3CA9D2D}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApproveAiModels", "ApproveAiModels\ApproveAiModels.csproj", "{CBAFA3E5-BDE0-422B-B65A-087D894C5C6C}"
