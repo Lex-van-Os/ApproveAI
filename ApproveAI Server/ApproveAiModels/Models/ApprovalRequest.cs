@@ -16,9 +16,9 @@ namespace ApproveAiModels.Models
         public DateTime? ApprovalDeadline { get; set; }
         public ApprovalStatus Status { get; set; } = ApprovalStatus.Open;
         public long ApprovalWorkflowId { get; set; }
-        public ApprovalWorkflow ApprovalWorkflow { get; set; } = new ApprovalWorkflow();
+        public ApprovalWorkflow ApprovalWorkflow { get; set; }
         public long RegisteredAnswerId { get; set; }
-        public RegisteredAnswer RegisteredAnswer { get; set; } = new RegisteredAnswer();
+        public RegisteredAnswer RegisteredAnswer { get; set; }
         public ICollection<ApprovalStep> ApprovalSteps { get; set; } = new List<ApprovalStep>();
     }
 }

@@ -13,8 +13,8 @@ namespace ApproveAiModels.Models
         public bool? Approved { get; set; }
         public bool? Rejected { get; set; }
         public long ApprovalRequestId { get; set; }
-        public ApprovalRequest ApprovalRequest { get; set; } = new ApprovalRequest();
+        public ApprovalRequest ApprovalRequest { get; set; }
         public long RegisteredById { get; set; }
-        public User RegisteredBy { get; set; } = new User();
+        public User RegisteredBy { get; set; }
     }
 }

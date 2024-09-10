@@ -8,6 +8,10 @@ Logs/
 # Generated files
 project.lock.json
 .vs/
+.vs/**/
+.vs/*/
+.vs/*
+.vs
 
 # mstest test results
 TestResults

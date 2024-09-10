@@ -13,10 +13,10 @@ namespace ApproveAiModels.Models
         public ApprovalStatus? Status { get; set; }
         public int StepIndex { get; set; }
         public long? ApprovedById { get; set; }
-        public User? ApprovedBy { get; set; } = new User();
+        public User? ApprovedBy { get; set; }
         public long? RejectedById { get; set; }
-        public User? RejectedBy { get; set; } = new User();
+        public User? RejectedBy { get; set; }
         public long ApprovalRequestId { get; set; }
-        public ApprovalRequest ApprovalRequest { get; set; } = new ApprovalRequest();
+        public ApprovalRequest ApprovalRequest { get; set; }
     }
 }
