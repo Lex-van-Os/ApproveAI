@@ -8,3 +8,7 @@ The ApproveAI API serves as the main project for the logic necessary for the App
 
 ### Seeder
 Upon launching the API, data is automatically seeded into the database. Please ensure not to add any data before launching the API and running the seeder.
+
+## Project structure
+
+As the main part of the functionality, this project makes use of a generic controller and repository pattern, that makes use of the OData protocol. Controllers for the entities inherit the generic controller, and have necessary unique methods built on top of them.
