@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace ApproveAiBusiness.Repositories
 {
+
+    // Point of improvement:
+    // SaveChangesAsync() should NOT be called in the repository layer, but should rather be called in the UnitOfWork layer.
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly ApplicationDbContext _context;

@@ -10,13 +10,13 @@ namespace ApproveAiBusiness.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext _dbContext;
         private bool _disposed = false;
         private Dictionary<Type, object> _repositories;
 
-        public UnitOfWork(ApplicationDbContext context)
+        public UnitOfWork(ApplicationDbContext dbContext)
         {
-            _context = context;
+            _dbContext = dbContext;
             _repositories = new Dictionary<Type, object>();
         }
 
@@ -27,14 +27,14 @@ namespace ApproveAiBusiness.UnitOfWork
                 return _repositories[typeof(TEntity)] as IGenericRepository<TEntity>;
             }
 
-            var repositoryInstance = new GenericRepository<TEntity>(_context);
+            var repositoryInstance = new GenericRepository<TEntity>(_dbContext);
             _repositories.Add(typeof(TEntity), repositoryInstance);
             return repositoryInstance;
         }
 
         public async Task<int> SaveChangesAsync()
         {
-            return await _context.SaveChangesAsync();
+            return await _dbContext.SaveChangesAsync();
         }
 
         protected virtual void Dispose(bool disposing)
@@ -43,7 +43,7 @@ namespace ApproveAiBusiness.UnitOfWork
             {
                 if (disposing)
                 {
-                    _context.Dispose();
+                    _dbContext.Dispose();
                 }
             }
             _disposed = true;
